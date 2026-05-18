@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: rgb(22, 175, 195);
+    --primary-color-darker: rgb(11, 69, 77);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    transition: 0.2s;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+.calculadora{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.display{
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    background: #dfdfdf;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.btn:hover{
+    background: #636262;
+}
+.btn-eq{
+    background: royalblue;
+}
+.btn-eq:hover{
+    background: rgb(16, 54, 168);
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .calculadora {
+        width: 100%;
+    }
+
+    .display {
+        font-size: 1.5em;
+        height: 60px;
+    }
+
+    .btn {
+        height: 60px;
+        font-size: 1.2em;
+    }
+
+    form button {
+        height: 50px;
+        font-size: 1em;
+    }
+}
+table {
+    width: 100%;
+}
